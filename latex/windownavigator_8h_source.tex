@@ -1,0 +1,54 @@
+\doxysection{windownavigator.\+h}
+\hypertarget{windownavigator_8h_source}{}\label{windownavigator_8h_source}\mbox{\hyperlink{windownavigator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ WINDOWNAVIGATOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ WINDOWNAVIGATOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{loginwindow_8h}{loginwindow.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mainadminwindow_8h}{mainadminwindow.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mainturwindow_8h}{mainturwindow.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mainuserwindow_8h}{mainuserwindow.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{exitwindow_8h}{exitwindow.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}profile.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{actor_8h}{actor.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{database_8h}{database.h}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_login_window}{LoginWindow}};}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_admin_window}{MainAdminWindow}};}
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_tur_window}{MainTurWindow}};}
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_user_window}{MainUserWindow}};}
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_exit_window}{ExitWindow}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_actor}{Actor}};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_window_navigator}{WindowNavigator}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00026\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_window_navigator_aeb59f834593e021fdecd8c793bbcb0b9}{WindowNavigator}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_window_navigator_a64a0142a280d16ca5f87115b5b58f4ae}{LoginWindowShow}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_window_navigator_a1031f8a4bd228e3fb837c76ba179014d}{\string~WindowNavigator}}();}
+\DoxyCodeLine{00032\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_data_base}{DataBase}}\ *db;}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_login_window}{LoginWindow}}*\ loginWindow;}
+\DoxyCodeLine{00035\ \ \ \ \ QMainWindow*\ mainWindow;}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_main_admin_window}{MainAdminWindow}}*\ adminWindow;}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_main_tur_window}{MainTurWindow}}*\ operatorWindow;}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_main_user_window}{MainUserWindow}}*\ userWindow;}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_exit_window}{ExitWindow}}*\ exitWindow;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ onUserEntered(\mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0}{Actor::Role}});}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ onLogout();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ WINDOWNAVIGATOR\_H}}
+
+\end{DoxyCode}

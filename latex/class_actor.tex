@@ -1,0 +1,146 @@
+\doxysection{Actor Class Reference}
+\hypertarget{class_actor}{}\label{class_actor}\index{Actor@{Actor}}
+
+
+{\ttfamily \#include $<$actor.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0}{Role}} \{ \mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0a2b19e106090e58519522cbea341306cb}{Admin}}
+, \mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0a0897be7aac14b0408f11a7f87ffcba9f}{Operator}}
+, \mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0a0084c18a27035665c3e21667df940c73}{User}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_actor_a503844e0ae7ca1cd4107ac3a56d0d6c2}{Actor}} (const QString \&number, const QString \&login, const QString \&password, const QString \&mail, const \mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0}{Role}} \mbox{\hyperlink{class_actor_ad93d32a19602f3480500664b374f9049}{role}})
+\item 
+\mbox{\hyperlink{class_actor_a2a0ff4335a1ee9096df90f288c026c8b}{Actor}} ()
+\item 
+QString \mbox{\hyperlink{class_actor_ac191addb8236eaea08b563a92ae04fff}{data\+Valid\+Check}} (QString const \&name, QString const \&number, QString const \&login, QString const \&password, QString const \&rpassword, QString const \&mail)
+\item 
+QString \mbox{\hyperlink{class_actor_a2134f2541392485803a26fb20b854d59}{role\+To\+String}} (\mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0}{Role}} \mbox{\hyperlink{class_actor_ad93d32a19602f3480500664b374f9049}{role}})
+\item 
+int \mbox{\hyperlink{class_actor_aa8a2070b4a1c1beb23f5a007e3dd8f14}{set\+Discount}} (int id\+\_\+client)
+\item 
+QString \mbox{\hyperlink{class_actor_ab7d1df7d0091796cfbbe531ed9035e3d}{load\+Login}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_actor_af5b34cb2b1420c9094737e260c4ac9ff}{Number}}
+\item 
+QString \mbox{\hyperlink{class_actor_a2abe4a7f9bd736527b03f1bf3f139f36}{Login}}
+\item 
+QString \mbox{\hyperlink{class_actor_a73c2e77419ccac2988a215a309d592e9}{Password}}
+\item 
+QString \mbox{\hyperlink{class_actor_a430976947802b84ae1ef77075817a81f}{Mail}}
+\item 
+\mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0}{Role}} \mbox{\hyperlink{class_actor_ad93d32a19602f3480500664b374f9049}{role}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0}\index{Actor@{Actor}!Role@{Role}}
+\index{Role@{Role}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{Role}{Role}}
+{\footnotesize\ttfamily \label{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0} 
+enum \mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0}{Actor\+::\+Role}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Admin@{Admin}!Actor@{Actor}}\index{Actor@{Actor}!Admin@{Admin}}}\Hypertarget{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0a2b19e106090e58519522cbea341306cb}\label{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0} 
+Admin&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Operator@{Operator}!Actor@{Actor}}\index{Actor@{Actor}!Operator@{Operator}}}\Hypertarget{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0a0897be7aac14b0408f11a7f87ffcba9f}\label{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0} 
+Operator&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{User@{User}!Actor@{Actor}}\index{Actor@{Actor}!User@{User}}}\Hypertarget{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0a0084c18a27035665c3e21667df940c73}\label{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0} 
+User&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_actor_a503844e0ae7ca1cd4107ac3a56d0d6c2}\index{Actor@{Actor}!Actor@{Actor}}
+\index{Actor@{Actor}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{Actor()}{Actor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_actor_a503844e0ae7ca1cd4107ac3a56d0d6c2} 
+Actor\+::\+Actor (\begin{DoxyParamCaption}\item[{const QString \&}]{number}{, }\item[{const QString \&}]{login}{, }\item[{const QString \&}]{password}{, }\item[{const QString \&}]{mail}{, }\item[{const \mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0}{Role}}}]{role}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_actor_a2a0ff4335a1ee9096df90f288c026c8b}\index{Actor@{Actor}!Actor@{Actor}}
+\index{Actor@{Actor}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{Actor()}{Actor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_actor_a2a0ff4335a1ee9096df90f288c026c8b} 
+Actor\+::\+Actor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_actor_ac191addb8236eaea08b563a92ae04fff}\index{Actor@{Actor}!dataValidCheck@{dataValidCheck}}
+\index{dataValidCheck@{dataValidCheck}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{dataValidCheck()}{dataValidCheck()}}
+{\footnotesize\ttfamily \label{class_actor_ac191addb8236eaea08b563a92ae04fff} 
+QString Actor\+::data\+Valid\+Check (\begin{DoxyParamCaption}\item[{QString const \&}]{name}{, }\item[{QString const \&}]{number}{, }\item[{QString const \&}]{login}{, }\item[{QString const \&}]{password}{, }\item[{QString const \&}]{rpassword}{, }\item[{QString const \&}]{mail}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_actor_ab7d1df7d0091796cfbbe531ed9035e3d}\index{Actor@{Actor}!loadLogin@{loadLogin}}
+\index{loadLogin@{loadLogin}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{loadLogin()}{loadLogin()}}
+{\footnotesize\ttfamily \label{class_actor_ab7d1df7d0091796cfbbe531ed9035e3d} 
+QString Actor\+::load\+Login (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_actor_a2134f2541392485803a26fb20b854d59}\index{Actor@{Actor}!roleToString@{roleToString}}
+\index{roleToString@{roleToString}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{roleToString()}{roleToString()}}
+{\footnotesize\ttfamily \label{class_actor_a2134f2541392485803a26fb20b854d59} 
+QString Actor\+::role\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0}{Actor\+::\+Role}}}]{role}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_actor_aa8a2070b4a1c1beb23f5a007e3dd8f14}\index{Actor@{Actor}!setDiscount@{setDiscount}}
+\index{setDiscount@{setDiscount}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{setDiscount()}{setDiscount()}}
+{\footnotesize\ttfamily \label{class_actor_aa8a2070b4a1c1beb23f5a007e3dd8f14} 
+int Actor\+::set\+Discount (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+client}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_actor_a2abe4a7f9bd736527b03f1bf3f139f36}\index{Actor@{Actor}!Login@{Login}}
+\index{Login@{Login}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{Login}{Login}}
+{\footnotesize\ttfamily \label{class_actor_a2abe4a7f9bd736527b03f1bf3f139f36} 
+QString Actor\+::\+Login}
+
+\Hypertarget{class_actor_a430976947802b84ae1ef77075817a81f}\index{Actor@{Actor}!Mail@{Mail}}
+\index{Mail@{Mail}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{Mail}{Mail}}
+{\footnotesize\ttfamily \label{class_actor_a430976947802b84ae1ef77075817a81f} 
+QString Actor\+::\+Mail}
+
+\Hypertarget{class_actor_af5b34cb2b1420c9094737e260c4ac9ff}\index{Actor@{Actor}!Number@{Number}}
+\index{Number@{Number}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{Number}{Number}}
+{\footnotesize\ttfamily \label{class_actor_af5b34cb2b1420c9094737e260c4ac9ff} 
+QString Actor\+::\+Number}
+
+\Hypertarget{class_actor_a73c2e77419ccac2988a215a309d592e9}\index{Actor@{Actor}!Password@{Password}}
+\index{Password@{Password}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{Password}{Password}}
+{\footnotesize\ttfamily \label{class_actor_a73c2e77419ccac2988a215a309d592e9} 
+QString Actor\+::\+Password}
+
+\Hypertarget{class_actor_ad93d32a19602f3480500664b374f9049}\index{Actor@{Actor}!role@{role}}
+\index{role@{role}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{role}{role}}
+{\footnotesize\ttfamily \label{class_actor_ad93d32a19602f3480500664b374f9049} 
+\mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0}{Role}} Actor\+::role}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{actor_8h}{actor.\+h}}\item 
+\mbox{\hyperlink{actor_8cpp}{actor.\+cpp}}\end{DoxyCompactItemize}

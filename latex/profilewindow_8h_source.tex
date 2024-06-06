@@ -1,0 +1,41 @@
+\doxysection{profilewindow.\+h}
+\hypertarget{profilewindow_8h_source}{}\label{profilewindow_8h_source}\mbox{\hyperlink{profilewindow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PROFILEWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PROFILEWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_profile_window}{ProfileWindow}};}
+\DoxyCodeLine{00008\ \}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_profile_window}{ProfileWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_profile_window_a271af555b456a9e05a5320cd2789f14a}{ProfileWindow}}(\textcolor{keywordtype}{int}\ id\_client,\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_profile_window_ad511d966864e7f1f91827566c61ae85d}{\string~ProfileWindow}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ signals:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_profile_window_a8c95143842f424d953dad3201c8e6323}{returnback}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_pushButton\_clicked();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_BackpushButton\_clicked();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_UpdatepushButton\_clicked();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ Ui::ProfileWindow\ *ui;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_id\_client;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ QWidget\ interface}}
+\DoxyCodeLine{00032\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_profile_window_a440e8825326b496bba4c02e173ce5780}{closeEvent}}(QCloseEvent\ *event);}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PROFILEWINDOW\_H}}
+
+\end{DoxyCode}

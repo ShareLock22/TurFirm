@@ -1,0 +1,35 @@
+\doxysection{actor.\+h}
+\hypertarget{actor_8h_source}{}\label{actor_8h_source}\mbox{\hyperlink{actor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ACTOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ACTOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_actor}{Actor}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0}{Role}}\ \{\mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0a2b19e106090e58519522cbea341306cb}{Admin}},\ \mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0a0897be7aac14b0408f11a7f87ffcba9f}{Operator}},\ \mbox{\hyperlink{class_user}{User}}\};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_actor_a2a0ff4335a1ee9096df90f288c026c8b}{Actor}}(\textcolor{keyword}{const}\ QString\&\ number,\ \textcolor{keyword}{const}\ QString\&\ login,}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ password,\ \textcolor{keyword}{const}\ QString\&\ mail,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0}{Role}}\ \mbox{\hyperlink{class_actor_ad93d32a19602f3480500664b374f9049}{role}});}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_actor_a2a0ff4335a1ee9096df90f288c026c8b}{Actor}}();}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ QString\ \mbox{\hyperlink{class_actor_ac191addb8236eaea08b563a92ae04fff}{dataValidCheck}}(QString\ \textcolor{keyword}{const}\ \&name,\ QString\ \textcolor{keyword}{const}\ \&number,\ QString\ \textcolor{keyword}{const}\ \&login,}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ QString\ \textcolor{keyword}{const}\ \&password,\ QString\ \textcolor{keyword}{const}\ \&rpassword,\ QString\ \textcolor{keyword}{const}\ \&mail);}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ QString\ \mbox{\hyperlink{class_actor_a2134f2541392485803a26fb20b854d59}{roleToString}}(\mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0}{Role}}\ \mbox{\hyperlink{class_actor_ad93d32a19602f3480500664b374f9049}{role}});}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_actor_aa8a2070b4a1c1beb23f5a007e3dd8f14}{setDiscount}}(\textcolor{keywordtype}{int}\ id\_client);}
+\DoxyCodeLine{00020\ \ \ \ \ QString\ \mbox{\hyperlink{class_actor_ab7d1df7d0091796cfbbe531ed9035e3d}{loadLogin}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ QString\ \mbox{\hyperlink{class_actor_af5b34cb2b1420c9094737e260c4ac9ff}{Number}};}
+\DoxyCodeLine{00024\ \ \ \ \ QString\ \mbox{\hyperlink{class_actor_a2abe4a7f9bd736527b03f1bf3f139f36}{Login}};}
+\DoxyCodeLine{00025\ \ \ \ \ QString\ \mbox{\hyperlink{class_actor_a73c2e77419ccac2988a215a309d592e9}{Password}};}
+\DoxyCodeLine{00026\ \ \ \ \ QString\ \mbox{\hyperlink{class_actor_a430976947802b84ae1ef77075817a81f}{Mail}};}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_actor_a98d48334b72390e7fa2bb80a9c8dbaf0}{Role}}\ \mbox{\hyperlink{class_actor_ad93d32a19602f3480500664b374f9049}{role}};}
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ACTOR\_H}}
+
+\end{DoxyCode}

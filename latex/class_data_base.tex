@@ -1,0 +1,317 @@
+\doxysection{Data\+Base Class Reference}
+\hypertarget{class_data_base}{}\label{class_data_base}\index{DataBase@{DataBase}}
+
+
+{\ttfamily \#include $<$database.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_data_base_a4a38c788f92801d2e73a422da1017e41}{Auth\+Check}} (QString const \&login, QString const \&password)
+\item 
+void \mbox{\hyperlink{class_data_base_ab87ed5b361b56f4605041a8abc8389c6}{populate\+Combo\+Box}} (QCombo\+Box \texorpdfstring{$\ast$}{*}combo\+Box)
+\item 
+void \mbox{\hyperlink{class_data_base_af11a32f0e828736099d6d65eca171eae}{populate\+Combo\+Box\+Hotels}} (QCombo\+Box \texorpdfstring{$\ast$}{*}combo\+Box)
+\item 
+void \mbox{\hyperlink{class_data_base_a4bb27c8b29f1a6a0a46fd54738e68f76}{add\+Actors}} (QString const \&name, QString const \&number, QString const \&login, QString const \&password, QString const \&mail, const int role)
+\item 
+void \mbox{\hyperlink{class_data_base_a2359bfa134c6a8f4dd4cda9825432c6f}{add\+Hotel}} (QString const \&name, QString const \&adress, int const country, const int services)
+\item 
+void \mbox{\hyperlink{class_data_base_a281f0256e71fdb9aeafbede4980beeda}{add\+Country}} (QString const \&name)
+\item 
+void \mbox{\hyperlink{class_data_base_ad8f87d4ce70e8ef6a664426b911ecffd}{add\+Tur}} (const QString \&duration, const int id\+\_\+hotel, const int id\+\_\+country, const QString \&date, const QString \&climate, const int id\+\_\+operator, const int id\+\_\+client, const int price, const int discount)
+\item 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_data_base_ad1ff031bb42c9384ecce5bb4c46111ff}{model\+Country}} (int is\+\_\+actual)
+\item 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_data_base_a28e24669f3fa4ab45bc03070ed84076e}{model\+Actor}} (int is\+\_\+actual)
+\item 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_data_base_a3986eaa30654fc3f6b0b2dc0a5fb102f}{model\+Hotel}} (int is\+\_\+actual)
+\item 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_data_base_a95e80793f4bad1a7f21d046ac7dfe0fc}{model\+Unconfirmed\+Turs}} ()
+\item 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_data_base_a7ee9b2788af707a052719ac2d2e92918}{model\+Tur}} (const int id\+\_\+operator, const int flag)
+\item 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_data_base_ab13ed461911c0022cf7f96b43b1b55e7}{model\+Role\+View}} (const int role)
+\item 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_data_base_a24cff17fdb2af1c5b4bc415df5fdb8cb}{model\+All\+Turs}} (int is\+\_\+actual)
+\item 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_data_base_adbfc407bbe6bacce924bf58472b4e582}{model\+Confirmed\+Turs}} (const int id\+\_\+client)
+\item 
+bool \mbox{\hyperlink{class_data_base_a003342732b72d73b40a1fa5e33fbc4d2}{unique\+Hotel}} (const QString \&name, const QString \&adress)
+\item 
+bool \mbox{\hyperlink{class_data_base_ad4a5d58db9067bbea580891a32250d4f}{unique\+Actor}} (const QString \&name, const QString \&number)
+\item 
+bool \mbox{\hyperlink{class_data_base_ab4a3cfe6631a1153da5d5f1ef188786e}{unique\+Country}} (const QString \&name)
+\item 
+void \mbox{\hyperlink{class_data_base_aab69ef8bd4a2eb3be69a725685f30137}{del\+Obj}} (const int id\+\_\+obj, const QString \&table, const int is\+\_\+actual)
+\item 
+void \mbox{\hyperlink{class_data_base_a6d20161fc837b91dbbcc21d419d813d5}{re\+Hotel}} (const int id\+\_\+hotel, const QString \&name, const QString \&adress, const int id\+\_\+country, const int services)
+\item 
+void \mbox{\hyperlink{class_data_base_a5fb4800778bbae37b76233b5e804b925}{re\+Tur}} (const int id\+\_\+tur, const QString \&duration, const QString \&datee, const int id\+\_\+hotel, const QString \&climate)
+\item 
+bool \mbox{\hyperlink{class_data_base_a18d6d7eac0aa8341e526da4e44cc112e}{is\+Actor}} (const QString \&login, const QString \&password)
+\item 
+int \mbox{\hyperlink{class_data_base_ac0c60cc42fa6cff33e5d6fa2f4025e2d}{set\+ID}} (const QString \&login)
+\item 
+int \mbox{\hyperlink{class_data_base_aa0cac34e2f5aafd788ca56fc0c47373e}{set\+Hotel}} (const QString \&name)
+\item 
+int \mbox{\hyperlink{class_data_base_ab81b49ec51776fcc22e7927a1d009d9d}{set\+Country}} (const QString \&name)
+\item 
+int \mbox{\hyperlink{class_data_base_a845c3536ea911602ce6b3415d0c2da1d}{set\+Tur}} (const int id\+\_\+country)
+\item 
+int \mbox{\hyperlink{class_data_base_a2de23875e158a690800df9ed920fc033}{get\+Is\+Actual}} (const int id\+\_\+obj, const QString \&table)
+\item 
+QString \mbox{\hyperlink{class_data_base_a660f0b601097eea768e7e79d37561647}{set\+Name\+Object}} (const QString \&table, const int id\+\_\+obj)
+\item 
+void \mbox{\hyperlink{class_data_base_a2ceaa8b66eb1ab36beb0e826b9b64ee7}{update\+Password}} (const int id\+\_\+user, const QString \&password)
+\item 
+void \mbox{\hyperlink{class_data_base_a2f6aab3bb4e6429e1966d24b09c00086}{confirm\+Tur}} (const int id\+\_\+client, const int id\+\_\+tur)
+\item 
+int \mbox{\hyperlink{class_data_base_a306347a9c96adcfe375d2b147ed0fed8}{count\+Tours\+For\+Client}} (int id\+\_\+client)
+\item 
+bool \mbox{\hyperlink{class_data_base_adb13554b5bc925e0699ab10bb258759d}{check\+Hotel}} (const int id\+\_\+hotel, const int id\+\_\+country)
+\item 
+bool \mbox{\hyperlink{class_data_base_a793451dca142f60a8c42d47c040c6c73}{acc\+Is\+Actual}} (const QString \&login)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{database_8h_ad36e5882443089e792fa97d3dc4214c0}{Hotel\+Lines}} $>$ \mbox{\hyperlink{class_data_base_ac3abf7e087abe0a7a41d8ba960748107}{get\+Hotel\+Info}} (const int id\+\_\+hotel)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{database_8h_a68ed9aba3ff5adc897357af06c2933db}{Tour\+Lines}} $>$ \mbox{\hyperlink{class_data_base_aaa0a45ad609dc92e762d0433e0a23e37}{get\+Tour\+Info}} (const int id\+\_\+tur)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{database_8h_a92ef5ddf43b9d36764a68fb0ee62e9ce}{Actors\+Lines}} $>$ \mbox{\hyperlink{class_data_base_aa3264686393c3e6ede8983cce8ff5265}{get\+Actor\+Info}} (const int id\+\_\+actor)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_data_base}{Data\+Base}} \& \mbox{\hyperlink{class_data_base_a3979cf35fa8d75e726fe60900de7ea3d}{get\+DB}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data_base_a793451dca142f60a8c42d47c040c6c73}\index{DataBase@{DataBase}!accIsActual@{accIsActual}}
+\index{accIsActual@{accIsActual}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{accIsActual()}{accIsActual()}}
+{\footnotesize\ttfamily \label{class_data_base_a793451dca142f60a8c42d47c040c6c73} 
+bool Data\+Base\+::acc\+Is\+Actual (\begin{DoxyParamCaption}\item[{const QString \&}]{login}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a4bb27c8b29f1a6a0a46fd54738e68f76}\index{DataBase@{DataBase}!addActors@{addActors}}
+\index{addActors@{addActors}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{addActors()}{addActors()}}
+{\footnotesize\ttfamily \label{class_data_base_a4bb27c8b29f1a6a0a46fd54738e68f76} 
+void Data\+Base\+::add\+Actors (\begin{DoxyParamCaption}\item[{QString const \&}]{name}{, }\item[{QString const \&}]{number}{, }\item[{QString const \&}]{login}{, }\item[{QString const \&}]{password}{, }\item[{QString const \&}]{mail}{, }\item[{const int}]{role}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a281f0256e71fdb9aeafbede4980beeda}\index{DataBase@{DataBase}!addCountry@{addCountry}}
+\index{addCountry@{addCountry}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{addCountry()}{addCountry()}}
+{\footnotesize\ttfamily \label{class_data_base_a281f0256e71fdb9aeafbede4980beeda} 
+void Data\+Base\+::add\+Country (\begin{DoxyParamCaption}\item[{QString const \&}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a2359bfa134c6a8f4dd4cda9825432c6f}\index{DataBase@{DataBase}!addHotel@{addHotel}}
+\index{addHotel@{addHotel}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{addHotel()}{addHotel()}}
+{\footnotesize\ttfamily \label{class_data_base_a2359bfa134c6a8f4dd4cda9825432c6f} 
+void Data\+Base\+::add\+Hotel (\begin{DoxyParamCaption}\item[{QString const \&}]{name}{, }\item[{QString const \&}]{adress}{, }\item[{int const}]{country}{, }\item[{const int}]{services}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_ad8f87d4ce70e8ef6a664426b911ecffd}\index{DataBase@{DataBase}!addTur@{addTur}}
+\index{addTur@{addTur}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{addTur()}{addTur()}}
+{\footnotesize\ttfamily \label{class_data_base_ad8f87d4ce70e8ef6a664426b911ecffd} 
+void Data\+Base\+::add\+Tur (\begin{DoxyParamCaption}\item[{const QString \&}]{duration}{, }\item[{const int}]{id\+\_\+hotel}{, }\item[{const int}]{id\+\_\+country}{, }\item[{const QString \&}]{date}{, }\item[{const QString \&}]{climate}{, }\item[{const int}]{id\+\_\+operator}{, }\item[{const int}]{id\+\_\+client}{, }\item[{const int}]{price}{, }\item[{const int}]{discount}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a4a38c788f92801d2e73a422da1017e41}\index{DataBase@{DataBase}!AuthCheck@{AuthCheck}}
+\index{AuthCheck@{AuthCheck}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{AuthCheck()}{AuthCheck()}}
+{\footnotesize\ttfamily \label{class_data_base_a4a38c788f92801d2e73a422da1017e41} 
+QString Data\+Base\+::\+Auth\+Check (\begin{DoxyParamCaption}\item[{QString const \&}]{login}{, }\item[{QString const \&}]{password}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_adb13554b5bc925e0699ab10bb258759d}\index{DataBase@{DataBase}!checkHotel@{checkHotel}}
+\index{checkHotel@{checkHotel}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{checkHotel()}{checkHotel()}}
+{\footnotesize\ttfamily \label{class_data_base_adb13554b5bc925e0699ab10bb258759d} 
+bool Data\+Base\+::check\+Hotel (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+hotel}{, }\item[{const int}]{id\+\_\+country}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a2f6aab3bb4e6429e1966d24b09c00086}\index{DataBase@{DataBase}!confirmTur@{confirmTur}}
+\index{confirmTur@{confirmTur}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{confirmTur()}{confirmTur()}}
+{\footnotesize\ttfamily \label{class_data_base_a2f6aab3bb4e6429e1966d24b09c00086} 
+void Data\+Base\+::confirm\+Tur (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+client}{, }\item[{const int}]{id\+\_\+tur}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a306347a9c96adcfe375d2b147ed0fed8}\index{DataBase@{DataBase}!countToursForClient@{countToursForClient}}
+\index{countToursForClient@{countToursForClient}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{countToursForClient()}{countToursForClient()}}
+{\footnotesize\ttfamily \label{class_data_base_a306347a9c96adcfe375d2b147ed0fed8} 
+int Data\+Base\+::count\+Tours\+For\+Client (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+client}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_aab69ef8bd4a2eb3be69a725685f30137}\index{DataBase@{DataBase}!delObj@{delObj}}
+\index{delObj@{delObj}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{delObj()}{delObj()}}
+{\footnotesize\ttfamily \label{class_data_base_aab69ef8bd4a2eb3be69a725685f30137} 
+void Data\+Base\+::del\+Obj (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+obj}{, }\item[{const QString \&}]{table}{, }\item[{const int}]{is\+\_\+actual}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_aa3264686393c3e6ede8983cce8ff5265}\index{DataBase@{DataBase}!getActorInfo@{getActorInfo}}
+\index{getActorInfo@{getActorInfo}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{getActorInfo()}{getActorInfo()}}
+{\footnotesize\ttfamily \label{class_data_base_aa3264686393c3e6ede8983cce8ff5265} 
+std\+::vector$<$ \mbox{\hyperlink{database_8h_a92ef5ddf43b9d36764a68fb0ee62e9ce}{Actors\+Lines}} $>$ Data\+Base\+::get\+Actor\+Info (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+actor}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a3979cf35fa8d75e726fe60900de7ea3d}\index{DataBase@{DataBase}!getDB@{getDB}}
+\index{getDB@{getDB}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{getDB()}{getDB()}}
+{\footnotesize\ttfamily \label{class_data_base_a3979cf35fa8d75e726fe60900de7ea3d} 
+\mbox{\hyperlink{class_data_base}{Data\+Base}} \& Data\+Base\+::get\+DB (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_data_base_ac3abf7e087abe0a7a41d8ba960748107}\index{DataBase@{DataBase}!getHotelInfo@{getHotelInfo}}
+\index{getHotelInfo@{getHotelInfo}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{getHotelInfo()}{getHotelInfo()}}
+{\footnotesize\ttfamily \label{class_data_base_ac3abf7e087abe0a7a41d8ba960748107} 
+std\+::vector$<$ \mbox{\hyperlink{database_8h_ad36e5882443089e792fa97d3dc4214c0}{Hotel\+Lines}} $>$ Data\+Base\+::get\+Hotel\+Info (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+hotel}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a2de23875e158a690800df9ed920fc033}\index{DataBase@{DataBase}!getIsActual@{getIsActual}}
+\index{getIsActual@{getIsActual}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{getIsActual()}{getIsActual()}}
+{\footnotesize\ttfamily \label{class_data_base_a2de23875e158a690800df9ed920fc033} 
+int Data\+Base\+::get\+Is\+Actual (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+obj}{, }\item[{const QString \&}]{table}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_aaa0a45ad609dc92e762d0433e0a23e37}\index{DataBase@{DataBase}!getTourInfo@{getTourInfo}}
+\index{getTourInfo@{getTourInfo}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{getTourInfo()}{getTourInfo()}}
+{\footnotesize\ttfamily \label{class_data_base_aaa0a45ad609dc92e762d0433e0a23e37} 
+std\+::vector$<$ \mbox{\hyperlink{database_8h_a68ed9aba3ff5adc897357af06c2933db}{Tour\+Lines}} $>$ Data\+Base\+::get\+Tour\+Info (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+tur}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a18d6d7eac0aa8341e526da4e44cc112e}\index{DataBase@{DataBase}!isActor@{isActor}}
+\index{isActor@{isActor}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{isActor()}{isActor()}}
+{\footnotesize\ttfamily \label{class_data_base_a18d6d7eac0aa8341e526da4e44cc112e} 
+bool Data\+Base\+::is\+Actor (\begin{DoxyParamCaption}\item[{const QString \&}]{login}{, }\item[{const QString \&}]{password}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a28e24669f3fa4ab45bc03070ed84076e}\index{DataBase@{DataBase}!modelActor@{modelActor}}
+\index{modelActor@{modelActor}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{modelActor()}{modelActor()}}
+{\footnotesize\ttfamily \label{class_data_base_a28e24669f3fa4ab45bc03070ed84076e} 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} Data\+Base\+::model\+Actor (\begin{DoxyParamCaption}\item[{int}]{is\+\_\+actual}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a24cff17fdb2af1c5b4bc415df5fdb8cb}\index{DataBase@{DataBase}!modelAllTurs@{modelAllTurs}}
+\index{modelAllTurs@{modelAllTurs}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{modelAllTurs()}{modelAllTurs()}}
+{\footnotesize\ttfamily \label{class_data_base_a24cff17fdb2af1c5b4bc415df5fdb8cb} 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} Data\+Base\+::model\+All\+Turs (\begin{DoxyParamCaption}\item[{int}]{is\+\_\+actual}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_adbfc407bbe6bacce924bf58472b4e582}\index{DataBase@{DataBase}!modelConfirmedTurs@{modelConfirmedTurs}}
+\index{modelConfirmedTurs@{modelConfirmedTurs}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{modelConfirmedTurs()}{modelConfirmedTurs()}}
+{\footnotesize\ttfamily \label{class_data_base_adbfc407bbe6bacce924bf58472b4e582} 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} Data\+Base\+::model\+Confirmed\+Turs (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+client}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_ad1ff031bb42c9384ecce5bb4c46111ff}\index{DataBase@{DataBase}!modelCountry@{modelCountry}}
+\index{modelCountry@{modelCountry}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{modelCountry()}{modelCountry()}}
+{\footnotesize\ttfamily \label{class_data_base_ad1ff031bb42c9384ecce5bb4c46111ff} 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} Data\+Base\+::model\+Country (\begin{DoxyParamCaption}\item[{int}]{is\+\_\+actual}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a3986eaa30654fc3f6b0b2dc0a5fb102f}\index{DataBase@{DataBase}!modelHotel@{modelHotel}}
+\index{modelHotel@{modelHotel}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{modelHotel()}{modelHotel()}}
+{\footnotesize\ttfamily \label{class_data_base_a3986eaa30654fc3f6b0b2dc0a5fb102f} 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} Data\+Base\+::model\+Hotel (\begin{DoxyParamCaption}\item[{int}]{is\+\_\+actual}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_ab13ed461911c0022cf7f96b43b1b55e7}\index{DataBase@{DataBase}!modelRoleView@{modelRoleView}}
+\index{modelRoleView@{modelRoleView}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{modelRoleView()}{modelRoleView()}}
+{\footnotesize\ttfamily \label{class_data_base_ab13ed461911c0022cf7f96b43b1b55e7} 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} Data\+Base\+::model\+Role\+View (\begin{DoxyParamCaption}\item[{const int}]{role}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a7ee9b2788af707a052719ac2d2e92918}\index{DataBase@{DataBase}!modelTur@{modelTur}}
+\index{modelTur@{modelTur}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{modelTur()}{modelTur()}}
+{\footnotesize\ttfamily \label{class_data_base_a7ee9b2788af707a052719ac2d2e92918} 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} Data\+Base\+::model\+Tur (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+operator}{, }\item[{const int}]{flag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a95e80793f4bad1a7f21d046ac7dfe0fc}\index{DataBase@{DataBase}!modelUnconfirmedTurs@{modelUnconfirmedTurs}}
+\index{modelUnconfirmedTurs@{modelUnconfirmedTurs}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{modelUnconfirmedTurs()}{modelUnconfirmedTurs()}}
+{\footnotesize\ttfamily \label{class_data_base_a95e80793f4bad1a7f21d046ac7dfe0fc} 
+QSql\+Query\+Model \texorpdfstring{$\ast$}{*} Data\+Base\+::model\+Unconfirmed\+Turs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_ab87ed5b361b56f4605041a8abc8389c6}\index{DataBase@{DataBase}!populateComboBox@{populateComboBox}}
+\index{populateComboBox@{populateComboBox}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{populateComboBox()}{populateComboBox()}}
+{\footnotesize\ttfamily \label{class_data_base_ab87ed5b361b56f4605041a8abc8389c6} 
+void Data\+Base\+::populate\+Combo\+Box (\begin{DoxyParamCaption}\item[{QCombo\+Box \texorpdfstring{$\ast$}{*}}]{combo\+Box}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_af11a32f0e828736099d6d65eca171eae}\index{DataBase@{DataBase}!populateComboBoxHotels@{populateComboBoxHotels}}
+\index{populateComboBoxHotels@{populateComboBoxHotels}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{populateComboBoxHotels()}{populateComboBoxHotels()}}
+{\footnotesize\ttfamily \label{class_data_base_af11a32f0e828736099d6d65eca171eae} 
+void Data\+Base\+::populate\+Combo\+Box\+Hotels (\begin{DoxyParamCaption}\item[{QCombo\+Box \texorpdfstring{$\ast$}{*}}]{combo\+Box}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a6d20161fc837b91dbbcc21d419d813d5}\index{DataBase@{DataBase}!reHotel@{reHotel}}
+\index{reHotel@{reHotel}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{reHotel()}{reHotel()}}
+{\footnotesize\ttfamily \label{class_data_base_a6d20161fc837b91dbbcc21d419d813d5} 
+void Data\+Base\+::re\+Hotel (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+hotel}{, }\item[{const QString \&}]{name}{, }\item[{const QString \&}]{adress}{, }\item[{const int}]{id\+\_\+country}{, }\item[{const int}]{services}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a5fb4800778bbae37b76233b5e804b925}\index{DataBase@{DataBase}!reTur@{reTur}}
+\index{reTur@{reTur}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{reTur()}{reTur()}}
+{\footnotesize\ttfamily \label{class_data_base_a5fb4800778bbae37b76233b5e804b925} 
+void Data\+Base\+::re\+Tur (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+tur}{, }\item[{const QString \&}]{duration}{, }\item[{const QString \&}]{datee}{, }\item[{const int}]{id\+\_\+hotel}{, }\item[{const QString \&}]{climate}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_ab81b49ec51776fcc22e7927a1d009d9d}\index{DataBase@{DataBase}!setCountry@{setCountry}}
+\index{setCountry@{setCountry}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{setCountry()}{setCountry()}}
+{\footnotesize\ttfamily \label{class_data_base_ab81b49ec51776fcc22e7927a1d009d9d} 
+int Data\+Base\+::set\+Country (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_aa0cac34e2f5aafd788ca56fc0c47373e}\index{DataBase@{DataBase}!setHotel@{setHotel}}
+\index{setHotel@{setHotel}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{setHotel()}{setHotel()}}
+{\footnotesize\ttfamily \label{class_data_base_aa0cac34e2f5aafd788ca56fc0c47373e} 
+int Data\+Base\+::set\+Hotel (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_ac0c60cc42fa6cff33e5d6fa2f4025e2d}\index{DataBase@{DataBase}!setID@{setID}}
+\index{setID@{setID}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{setID()}{setID()}}
+{\footnotesize\ttfamily \label{class_data_base_ac0c60cc42fa6cff33e5d6fa2f4025e2d} 
+int Data\+Base\+::set\+ID (\begin{DoxyParamCaption}\item[{const QString \&}]{login}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a660f0b601097eea768e7e79d37561647}\index{DataBase@{DataBase}!setNameObject@{setNameObject}}
+\index{setNameObject@{setNameObject}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{setNameObject()}{setNameObject()}}
+{\footnotesize\ttfamily \label{class_data_base_a660f0b601097eea768e7e79d37561647} 
+QString Data\+Base\+::set\+Name\+Object (\begin{DoxyParamCaption}\item[{const QString \&}]{table}{, }\item[{const int}]{id\+\_\+obj}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a845c3536ea911602ce6b3415d0c2da1d}\index{DataBase@{DataBase}!setTur@{setTur}}
+\index{setTur@{setTur}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{setTur()}{setTur()}}
+{\footnotesize\ttfamily \label{class_data_base_a845c3536ea911602ce6b3415d0c2da1d} 
+int Data\+Base\+::set\+Tur (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+country}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_ad4a5d58db9067bbea580891a32250d4f}\index{DataBase@{DataBase}!uniqueActor@{uniqueActor}}
+\index{uniqueActor@{uniqueActor}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{uniqueActor()}{uniqueActor()}}
+{\footnotesize\ttfamily \label{class_data_base_ad4a5d58db9067bbea580891a32250d4f} 
+bool Data\+Base\+::unique\+Actor (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{, }\item[{const QString \&}]{number}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_ab4a3cfe6631a1153da5d5f1ef188786e}\index{DataBase@{DataBase}!uniqueCountry@{uniqueCountry}}
+\index{uniqueCountry@{uniqueCountry}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{uniqueCountry()}{uniqueCountry()}}
+{\footnotesize\ttfamily \label{class_data_base_ab4a3cfe6631a1153da5d5f1ef188786e} 
+bool Data\+Base\+::unique\+Country (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a003342732b72d73b40a1fa5e33fbc4d2}\index{DataBase@{DataBase}!uniqueHotel@{uniqueHotel}}
+\index{uniqueHotel@{uniqueHotel}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{uniqueHotel()}{uniqueHotel()}}
+{\footnotesize\ttfamily \label{class_data_base_a003342732b72d73b40a1fa5e33fbc4d2} 
+bool Data\+Base\+::unique\+Hotel (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{, }\item[{const QString \&}]{adress}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_data_base_a2ceaa8b66eb1ab36beb0e826b9b64ee7}\index{DataBase@{DataBase}!updatePassword@{updatePassword}}
+\index{updatePassword@{updatePassword}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{updatePassword()}{updatePassword()}}
+{\footnotesize\ttfamily \label{class_data_base_a2ceaa8b66eb1ab36beb0e826b9b64ee7} 
+void Data\+Base\+::update\+Password (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+user}{, }\item[{const QString \&}]{password}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{database_8h}{database.\+h}}\item 
+\mbox{\hyperlink{database_8cpp}{database.\+cpp}}\end{DoxyCompactItemize}

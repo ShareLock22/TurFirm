@@ -1,0 +1,63 @@
+\doxysection{mainadminwindow.\+h}
+\hypertarget{mainadminwindow_8h_source}{}\label{mainadminwindow_8h_source}\mbox{\hyperlink{mainadminwindow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MAINADMINWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MAINADMINWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{exitwindow_8h}{exitwindow.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{addoperatorwindow_8h}{addoperatorwindow.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{addadminwindow_8h}{addadminwindow.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{database_8h}{database.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_admin_window}{MainAdminWindow}};}
+\DoxyCodeLine{00014\ \}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_admin_window}{MainAdminWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_main_admin_window_a46a780cdc5a8b9455b415576b61402bb}{MainAdminWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_main_admin_window_a27307edcc9988022b67a24cef069700f}{\string~MainAdminWindow}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_AddpushButton\_clicked();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_ExitpushButton\_clicked();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_AddAdminpushButton\_clicked();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_ActortableView\_doubleClicked(\textcolor{keyword}{const}\ QModelIndex\ \&index);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ UpdateModel(\textcolor{keyword}{const}\ QString\&\ modelType);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_AdmintableView\_doubleClicked(\textcolor{keyword}{const}\ QModelIndex\ \&index);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_OperatortableView\_doubleClicked(\textcolor{keyword}{const}\ QModelIndex\ \&index);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_ClienttableView\_doubleClicked(\textcolor{keyword}{const}\ QModelIndex\ \&index);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_HotelListView\_doubleClicked(\textcolor{keyword}{const}\ QModelIndex\ \&index);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_CountryListView\_doubleClicked(\textcolor{keyword}{const}\ QModelIndex\ \&index);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ ModelIndex(\textcolor{keyword}{const}\ QString\&\ modelName);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_CountryModelcomboBox\_currentIndexChanged(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_HotelModelcomboBox\_currentIndexChanged(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_TourListView\_doubleClicked(\textcolor{keyword}{const}\ QModelIndex\ \&index);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_TourModelcomboBox\_currentIndexChanged(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ signals:}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_admin_window_ac2d554d218bf02aac8d752980dc882ec}{logout}}();}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//void\ UpdateModel();}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00055\ \ \ \ \ Ui::MainAdminWindow\ *ui;}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINADMINWINDOW\_H}}
+
+\end{DoxyCode}

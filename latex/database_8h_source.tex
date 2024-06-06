@@ -1,0 +1,97 @@
+\doxysection{database.\+h}
+\hypertarget{database_8h_source}{}\label{database_8h_source}\mbox{\hyperlink{database_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DATABASE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DATABASE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QtSql>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QVariant>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{actor_8h}{actor.h}}>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ }\mbox{\hyperlink{database_8h_a68ed9aba3ff5adc897357af06c2933db}{TourLines}}\ =\ std::tuple<QString,}
+\DoxyCodeLine{00012\ \ \ \ \ QString,\ QString,\ QString,\ QString,\ QString,\ QString,\ int,\ \textcolor{keywordtype}{int}>;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ }\mbox{\hyperlink{database_8h_ad36e5882443089e792fa97d3dc4214c0}{HotelLines}}\ =\ std::tuple<QString,\ QString,\ QString,\ int>;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ }\mbox{\hyperlink{database_8h_a92ef5ddf43b9d36764a68fb0ee62e9ce}{ActorsLines}}\ =\ std::tuple<QString,\ QString,\ QString,\ QString,\ QString>;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_data_base}{DataBase}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_data_base}{DataBase}}\&\ \mbox{\hyperlink{class_data_base_a3979cf35fa8d75e726fe60900de7ea3d}{getDB}}();}
+\DoxyCodeLine{00022\ \ \ \ \ QString\ \mbox{\hyperlink{class_data_base_a4a38c788f92801d2e73a422da1017e41}{AuthCheck}}(QString\ \textcolor{keyword}{const}\ \&login,\ QString\ \textcolor{keyword}{const}\ \&password);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_base_ab87ed5b361b56f4605041a8abc8389c6}{populateComboBox}}(QComboBox\ *comboBox);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_base_af11a32f0e828736099d6d65eca171eae}{populateComboBoxHotels}}(QComboBox\ *comboBox);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_base_a4bb27c8b29f1a6a0a46fd54738e68f76}{addActors}}(QString\ \textcolor{keyword}{const}\ \&name,\ QString\ \textcolor{keyword}{const}\ \&number,}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ QString\ \textcolor{keyword}{const}\ \&login,\ QString\ \textcolor{keyword}{const}\ \&password,\ QString\ \textcolor{keyword}{const}\ \&mail,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ role);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_base_a2359bfa134c6a8f4dd4cda9825432c6f}{addHotel}}(QString\ \textcolor{keyword}{const}\ \&name,\ QString\ \textcolor{keyword}{const}\ \&adress,}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \textcolor{keyword}{const}\ country,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ services);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_base_a281f0256e71fdb9aeafbede4980beeda}{addCountry}}(QString\ \textcolor{keyword}{const}\ \&name);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_base_ad8f87d4ce70e8ef6a664426b911ecffd}{addTur}}(\textcolor{keyword}{const}\ QString\&\ duration,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_hotel,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_country,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ date,\ \textcolor{keyword}{const}\ QString\&\ climate,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_operator,}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_client,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ price,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ discount);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ QSqlQueryModel*\ \mbox{\hyperlink{class_data_base_ad1ff031bb42c9384ecce5bb4c46111ff}{modelCountry}}(\textcolor{keywordtype}{int}\ is\_actual);}
+\DoxyCodeLine{00036\ \ \ \ \ QSqlQueryModel*\ \mbox{\hyperlink{class_data_base_a28e24669f3fa4ab45bc03070ed84076e}{modelActor}}(\textcolor{keywordtype}{int}\ is\_actual);}
+\DoxyCodeLine{00037\ \ \ \ \ QSqlQueryModel*\ \mbox{\hyperlink{class_data_base_a3986eaa30654fc3f6b0b2dc0a5fb102f}{modelHotel}}(\textcolor{keywordtype}{int}\ is\_actual);}
+\DoxyCodeLine{00038\ \ \ \ \ QSqlQueryModel*\ \mbox{\hyperlink{class_data_base_a95e80793f4bad1a7f21d046ac7dfe0fc}{modelUnconfirmedTurs}}();}
+\DoxyCodeLine{00039\ \ \ \ \ QSqlQueryModel*\ \mbox{\hyperlink{class_data_base_a7ee9b2788af707a052719ac2d2e92918}{modelTur}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_operator,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ flag);}
+\DoxyCodeLine{00040\ \ \ \ \ QSqlQueryModel*\ \mbox{\hyperlink{class_data_base_ab13ed461911c0022cf7f96b43b1b55e7}{modelRoleView}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ role);}
+\DoxyCodeLine{00041\ \ \ \ \ QSqlQueryModel*\ \mbox{\hyperlink{class_data_base_a24cff17fdb2af1c5b4bc415df5fdb8cb}{modelAllTurs}}(\textcolor{keywordtype}{int}\ is\_actual);}
+\DoxyCodeLine{00042\ \ \ \ \ QSqlQueryModel*\ \mbox{\hyperlink{class_data_base_adbfc407bbe6bacce924bf58472b4e582}{modelConfirmedTurs}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_client);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data_base_a003342732b72d73b40a1fa5e33fbc4d2}{uniqueHotel}}(\textcolor{keyword}{const}\ QString\&\ name,\ \textcolor{keyword}{const}\ QString\&\ adress);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data_base_ad4a5d58db9067bbea580891a32250d4f}{uniqueActor}}(\textcolor{keyword}{const}\ QString\&\ name,\ \textcolor{keyword}{const}\ QString\&\ number);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data_base_ab4a3cfe6631a1153da5d5f1ef188786e}{uniqueCountry}}(\textcolor{keyword}{const}\ QString\&\ name);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_base_aab69ef8bd4a2eb3be69a725685f30137}{delObj}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_obj,\ \textcolor{keyword}{const}\ QString\&\ table,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ is\_actual);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_base_a6d20161fc837b91dbbcc21d419d813d5}{reHotel}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_hotel,\ \textcolor{keyword}{const}\ QString\&\ name,}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ adress,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_country,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ services);}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_base_a5fb4800778bbae37b76233b5e804b925}{reTur}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_tur,\ \textcolor{keyword}{const}\ QString\&\ duration,\ \textcolor{keyword}{const}\ QString\&\ datee,}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_hotel,\ \textcolor{keyword}{const}\ QString\&\ climate);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data_base_a18d6d7eac0aa8341e526da4e44cc112e}{isActor}}(\textcolor{keyword}{const}\ QString\&\ login,\ \textcolor{keyword}{const}\ QString\&\ password);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_data_base_ac0c60cc42fa6cff33e5d6fa2f4025e2d}{setID}}(\textcolor{keyword}{const}\ QString\&\ login);}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_data_base_aa0cac34e2f5aafd788ca56fc0c47373e}{setHotel}}(\textcolor{keyword}{const}\ QString\&\ name);}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_data_base_ab81b49ec51776fcc22e7927a1d009d9d}{setCountry}}(\textcolor{keyword}{const}\ QString\&\ name);}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_data_base_a845c3536ea911602ce6b3415d0c2da1d}{setTur}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_country);}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_data_base_a2de23875e158a690800df9ed920fc033}{getIsActual}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_obj,\ \textcolor{keyword}{const}\ QString\&\ table);}
+\DoxyCodeLine{00062\ \ \ \ \ QString\ \mbox{\hyperlink{class_data_base_a660f0b601097eea768e7e79d37561647}{setNameObject}}(\textcolor{keyword}{const}\ QString\&\ table,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_obj);}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_base_a2ceaa8b66eb1ab36beb0e826b9b64ee7}{updatePassword}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_user,\ \textcolor{keyword}{const}\ QString\&\ password);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_base_a2f6aab3bb4e6429e1966d24b09c00086}{confirmTur}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_client,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_tur);}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_data_base_a306347a9c96adcfe375d2b147ed0fed8}{countToursForClient}}(\textcolor{keywordtype}{int}\ id\_client);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data_base_adb13554b5bc925e0699ab10bb258759d}{checkHotel}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_hotel,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_country);}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data_base_a793451dca142f60a8c42d47c040c6c73}{accIsActual}}(\textcolor{keyword}{const}\ QString\&\ login);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ std::vector<HotelLines>\ \mbox{\hyperlink{class_data_base_ac3abf7e087abe0a7a41d8ba960748107}{getHotelInfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_hotel);}
+\DoxyCodeLine{00072\ \ \ \ \ std::vector<TourLines>\ \mbox{\hyperlink{class_data_base_aaa0a45ad609dc92e762d0433e0a23e37}{getTourInfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_tur);}
+\DoxyCodeLine{00073\ \ \ \ \ std::vector<ActorsLines>\ \mbox{\hyperlink{class_data_base_aa3264686393c3e6ede8983cce8ff5265}{getActorInfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ id\_actor);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{class_data_base}{DataBase}}();}
+\DoxyCodeLine{00078\ \ \ \ \ QSqlDatabase\ database;}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ CreateTables();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ createActors();}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ inflateActors();}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ inflateHotels();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ createHotels();}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ createTurs();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ createCountries();}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ inflateCountries();}
+\DoxyCodeLine{00090\ \};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DATABASE\_H}}
+
+\end{DoxyCode}

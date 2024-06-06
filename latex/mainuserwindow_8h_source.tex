@@ -1,0 +1,37 @@
+\doxysection{mainuserwindow.\+h}
+\hypertarget{mainuserwindow_8h_source}{}\label{mainuserwindow_8h_source}\mbox{\hyperlink{mainuserwindow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MAINUSERWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MAINUSERWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_user_window}{MainUserWindow}};}
+\DoxyCodeLine{00008\ \}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_user_window}{MainUserWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_main_user_window_ae1679188e5d329d02c1fcd0d93f775aa}{MainUserWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_main_user_window_a53041006271b027495389f73f6b153cb}{\string~MainUserWindow}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_ExitpushButton\_clicked();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_ClienttableView\_doubleClicked(\textcolor{keyword}{const}\ QModelIndex\ \&index);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_ProfilepushButton\_clicked();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ signals:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_user_window_a910c1037d71f729b777b67f15c9405be}{logout}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_user_window_a3b52a3a0a89d604a05d279b452698945}{openClientProfile}}(QString\&\ name);}
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ Ui::MainUserWindow\ *ui;}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINUSERWINDOW\_H}}
+
+\end{DoxyCode}
